@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>805</width>
+    <height>605</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Комплексные числа</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Теория</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QWidget" name="widget" native="true">
+          <widget class="QLabel" name="label">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>161</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Какую тему хотите выбрать?</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="themes">
+           <property name="geometry">
+            <rect>
+             <x>170</x>
+             <y>0</y>
+             <width>461</width>
+             <height>22</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QTextEdit" name="data_output">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>70</y>
+             <width>761</width>
+             <height>451</height>
+            </rect>
+           </property>
+           <property name="html">
+            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14.25pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="images_theory_btn">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>30</y>
+             <width>151</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Рисунки</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="upload_btn">
+           <property name="geometry">
+            <rect>
+             <x>640</x>
+             <y>0</y>
+             <width>121</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Загрузить урок</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Практика</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QWidget" name="widget_2" native="true">
+          <widget class="QLabel" name="label_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>121</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>По какой теме задачи?</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_3">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>30</y>
+             <width>121</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Номер задачи:</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="ex_themes">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>0</y>
+             <width>321</width>
+             <height>22</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="ex_nums">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>30</y>
+             <width>321</width>
+             <height>22</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_4">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>60</y>
+             <width>47</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Задача:</string>
+           </property>
+          </widget>
+          <widget class="QTextEdit" name="ex_output">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>100</y>
+             <width>761</width>
+             <height>391</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_5">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>500</y>
+             <width>41</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Ответ:</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="output_btn">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>60</y>
+             <width>121</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Вывести</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="answer_btn">
+           <property name="geometry">
+            <rect>
+             <x>630</x>
+             <y>500</y>
+             <width>131</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Ответить</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="ex_upload_nums_btn">
+           <property name="geometry">
+            <rect>
+             <x>460</x>
+             <y>30</y>
+             <width>131</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Обновить список задач</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="result">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>500</y>
+             <width>251</width>
+             <height>22</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="res_output">
+           <property name="geometry">
+            <rect>
+             <x>300</x>
+             <y>500</y>
+             <width>321</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="graph_btn">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>60</y>
+             <width>111</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Графики</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="im_practice_btn">
+           <property name="geometry">
+            <rect>
+             <x>300</x>
+             <y>60</y>
+             <width>111</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Рисунки</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_9">
+           <property name="geometry">
+            <rect>
+             <x>470</x>
+             <y>50</y>
+             <width>111</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;После выбора темы&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>805</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="help_menu">
+    <property name="title">
+     <string>Помощь</string>
+    </property>
+   </widget>
+   <addaction name="help_menu"/>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
